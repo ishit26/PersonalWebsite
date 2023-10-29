@@ -13,6 +13,7 @@
     --bg-color: #000;
     --text-color: #fff;
     --main-color: #0ef;
+    --second-bg-color: #323946;
 }
 
 html{
@@ -30,6 +31,9 @@ section{
     padding: 10rem 9% 2rem;
 }
 
+/****************************
+Navbar 
+****************************/
 .header{
     position: fixed;
     top: 0;
@@ -68,6 +72,9 @@ section{
     display: none;
 }
 
+/**********************************
+Home Section
+**********************************/
 .home{
     display: flex;
     align-items: center;
@@ -140,4 +147,81 @@ span{
     background: var(--bg-color);
     color: var(--text-color);
 }
+
+/*******************************
+About Section
+*******************************/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var;
+}
+
+.about-img img{
+    width: 40vw;
+}
+
+.heading{
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.about-info h2{
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-info h3{
+    font-size: 2.3rem;
+}
+
+.about-info p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    text-align: justify;
+}
+
+/********************************
+Skills Section
+********************************/
+.skills h2{
+    margin-bottom: 5rem;
+    font-size: 4.5rem;
+}
+
+.skill-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill-container .skill-box{
+    flex: 15rem;
+    background: var(--second-bg-color);
+    padding: 3rem;
+    border-radius: 20rem;
+    text-align: center;
+    border: 0.3rem solid var(--bg-color);
+    transition: 0.5s ease;
+}
+
+.skill-container .skill-box:hover{
+    border-color: var(--main-color);
+    box-shadow: 0 0 2rem var(--main-color);
+    transform: scale(1.02);
+}
+
+.skill-box i{
+    font-size: 6rem;
+    color: var(--main-color);
+}
+
+.skill-box h3{
+    font-size: 1.5rem;
+}
+
 
