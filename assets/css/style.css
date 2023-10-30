@@ -1,3 +1,6 @@
+/*****************************
+Common CSS
+*****************************/
 *{
     margin: 0;
     padding: 0;
@@ -82,7 +85,7 @@ Home Section
 }
 
 .home .home-img img{
-    width: 40vw;
+    width: 38vw;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid var(--main-color);
@@ -156,11 +159,11 @@ About Section
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .about-img img{
-    width: 40vw;
+    width: 45vw;
 }
 
 .heading{
@@ -205,7 +208,7 @@ Skills Section
     padding: 3rem;
     border-radius: 5rem;
     text-align: center;
-    border: 0.3rem solid var(--bg-color);
+    border: 0.3rem solid var(--second-bg-color);
     transition: 0.5s ease;
 }
 
@@ -228,7 +231,7 @@ Skills Section
 Portfolio Section
 ***************************/
 .portfolio{
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .portfolio h2{
@@ -245,7 +248,7 @@ Portfolio Section
 .portfolio-container .portfolio-box{
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 2rem var(--bg-color);
+    box-shadow: 0 0 2rem var(--second-bg-color);
     overflow: hidden;
     display: flex;
 }
@@ -301,6 +304,45 @@ Portfolio Section
 
 .portfolio-layer a i{
     font-size: 1.8rem;
-    color: var(--second-bg-color);
+    color: var(--bg-color);
 }
 
+/*********************************
+Contact Section
+*********************************/
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+    margin-bottom: 2rem;
+}
