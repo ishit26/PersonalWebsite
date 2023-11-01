@@ -15,7 +15,7 @@ Common CSS
 :root{
     --bg-color: #000;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: rgb(0, 255, 17);
     --second-bg-color: #323946;
 }
 
@@ -85,7 +85,7 @@ Home Section
 }
 
 .home .home-img img{
-    width: 38vw;
+    width: 35vw;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid var(--main-color);
@@ -118,7 +118,6 @@ span{
 .social-media a:hover{
     background: var(--main-color);
     color: var(--text-color);
-    /* box-shadow: 0 0 1rem var(--main-color); */
 }
 
 .home-info h3{
@@ -164,6 +163,21 @@ About Section
 
 .about-img img{
     width: 45vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-2.4rem);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .heading{
